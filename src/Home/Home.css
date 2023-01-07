@@ -181,6 +181,85 @@ content.scrolled
     font-size: 20px;
 }
 
+.content .models
+{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20vh;
+    margin-bottom: 0;
+}
+
+.content .models .model-container
+{
+    width: 90%;
+    border-radius: 20px;
+    background: var(--over-color-2);
+    display: flex;
+    max-height: 35vh;
+    min-height: 35vh;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5rem;
+    padding-left: 1rem;
+}
+
+.content .models .model-container .container-img
+{
+    
+    position: relative;
+    background: transparent;
+    z-index: 1;
+    border-radius: 20px;
+}
+
+.content .models .model-container:nth-child(2)
+{
+    overflow: hidden;
+}
+
+.content .models .model-container:nth-child(2) .container-img
+{
+    background: transparent;
+
+}
+
+.content .models .model-container .container-img img 
+{
+    height: 65vh;
+    position:relative;
+    z-index:-1;
+   transform: rotateZ(-10deg);
+}
+
+.content .models .model-container:nth-child(2)  .container-img img 
+{
+    transform: initial;
+    width: 105%;
+    height: auto;
+    transform: rotateZ(10deg);
+
+}
+
+
+.content .models .model-container .text 
+{
+    align-self: flex-start;
+}
+
+.content .models .model-container .text h3 
+{
+    font-size: 35px;
+}
+
+
+
+.content .models .model-container .text p 
+{
+    color: var(--text-color-2);
+
+}
+
 .content .part.part-advantages .part-container .advantage-icon
 {
     font-size: 50px;
@@ -201,6 +280,15 @@ content.scrolled
     font-size: 30px;
     color: #fff;
 
+}
+
+
+.content .models .model-container .text h3 
+{
+    
+    background: -webkit-linear-gradient(180deg, var(--background-color-1), var(--contrast-color-2) 70%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 @keyframes shoes_animation 

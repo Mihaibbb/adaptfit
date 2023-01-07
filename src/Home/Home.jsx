@@ -6,6 +6,7 @@ import { useState } from "react";
 import flyingShoes from "../imgs/flying_shoes.png";
 import { useRef } from "react";
 import runningShoes from "../imgs/sport_shoes.png";
+import runningShoesBg from "../imgs/sport_shoes_bg.png";
 import shoes3 from "../imgs/shoes3.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChartSimple, faCoins, faLeaf } from "@fortawesome/free-solid-svg-icons";
@@ -108,18 +109,37 @@ const Home = () => {
             
             <div className="models">
                 <div className="model-container">
-                    <h3>Adaptfit Classic</h3>
-                    <p></p>
+                    <div className="text">
+                        <h3>Adaptfit Classic</h3>
+                        <p>This are the casual model.</p>
+                    </div>
+                
+                    <div className="container-img">
+                        <img src={shoes3} alt="shoes" />
+                    </div>
+
+
+
                 </div>
 
                 <div className="model-container">
-                    <h3>AdaptFit Zoom</h3>
-                    <p></p>
+                    <div className="text">
+                        <h3>AdaptFit Zoom</h3>
+
+                        <p>AdaptFit has a sport collection too. For people who loves adrenaline and sport, our shoes will be their best friends.</p>
+
+                    </div>
+
+                    <div className="container-img">
+                        <img src={runningShoesBg} alt="sport-imgs" />
+                    </div>
                 </div>
+
+          
             </div>
            
 
-            <div className="part" id="testimonials"></div>
+            {/* <div className="part" id="testimonials"></div> */}
 
             <div className="part last-part">
                 <h2 className="title">Don't let size spoil your <span>experience</span> <br /> with <span>AdaptFit.</span></h2>
