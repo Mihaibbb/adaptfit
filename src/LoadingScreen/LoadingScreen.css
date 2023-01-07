@@ -1,0 +1,38 @@
+.loading-content 
+{
+    background: var(--background-color-2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+
+}
+
+.loading-content .loading-logo 
+{
+    width: 100%;
+    animation: pulsing 1.25s infinite;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.loading-content .loading-logo img 
+{
+    width: 150px;
+}
+
+@keyframes pulsing 
+{
+    0% {
+        opacity: 0;
+    } 50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+

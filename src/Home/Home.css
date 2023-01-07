@@ -1,0 +1,252 @@
+/* body 
+{
+    cursor: url('../imgs/cursor3.svg'), auto;
+} */
+
+.content 
+{
+    width: 100%;
+    min-height: 100vh;
+    padding: 2rem 0 0;
+    opacity: 1;
+    animation: fade_anim_content 1000ms ease-in-out;
+    background-image: linear-gradient(135deg, var(--background-color-1) 55%, var(--background-color-2) 55%);
+    
+    background-attachment: fixed;
+    position: relative;
+    z-index: 1;
+    transition: all 400ms ease-in-out;
+}
+
+.content::before 
+{
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(135deg, var(--background-color-2) 50%, var(--background-color-1) 100%);
+    background-attachment: fixed;
+
+    z-index: -1;
+    transition: opacity 0.5s linear;
+    opacity: 0;
+}
+
+.content.scrolled::before
+{
+    opacity: 1;
+}
+
+content.scrolled 
+{
+   
+}
+
+.content .part
+{
+    display: flex;
+    justify-content: center;
+    margin-block: 5rem;
+    min-height: 75vh;
+   
+}
+
+.content .part:not(.last-part)
+{
+    margin-inline: 5%;
+}
+
+.content .part-one 
+{
+    min-height: calc(100vh - 65px - 12rem);
+    width: 100%;
+    margin-top: 10rem;
+    margin-inline: 5%;
+
+}
+
+.content .part .part-container 
+{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.content .part .part-container img 
+{
+    max-width: 100%;
+}
+
+.content .part .part-container img.running-img
+{
+    transform: rotateZ(-45deg);
+    cursor: pointer;
+    transition: all 650ms ease-in-out;
+}
+
+.content .part .part-container img.running-img:hover 
+{
+    transform: rotateZ(45deg);
+
+}
+
+
+.content h2.title
+{
+    color: var(--text-color);
+    font-family: "Nike";
+    font-size: 80px;
+    text-align: center;
+    animation: fade_anim 850ms linear;
+}
+
+.content .part-one h2.title
+{
+    text-align: initial;
+}
+
+.content .part h2.title span
+{
+    background: -webkit-linear-gradient(135deg, var(--background-color-1), var(--contrast-color-2) 70%, var(--contrast-color-2));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.content .part-one .part-container
+{
+    position: relative;
+}
+
+.content .part-one .part-container img 
+{
+    width: 110%;
+    position: absolute;
+    left: -15%;
+    top: -25%;
+    user-select: none;
+ 
+    animation: shoes_animation 1750ms linear;
+}
+
+.content .part .part-container p 
+{
+    font-size: 24px;
+    color: var(--text-color-2);
+    margin-top: -20px;
+ 
+
+    animation: shoes_animation 1500ms linear;
+
+}
+
+.content .part.part-one .part-container p
+{
+    max-width: 90%;
+}
+
+.content .part.last-part 
+{
+    width: 100%;
+    min-height: 25vh;
+    margin-bottom: 0;
+    background: var(--background-last);
+}
+
+.content .part.last-part h2 
+{
+    color: var(--text-color);
+    text-align: center;
+}
+
+.content .part.part-advantages 
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 2rem;
+    min-height: auto;
+   
+}
+
+.content .part.part-advantages .part-container 
+{
+    background: var(--over-color-2);
+    padding: 2rem 3rem;
+    border-radius: 20px;
+}
+
+.content .part.part-advantages .part-container p 
+{
+    font-size: 20px;
+}
+
+.content .part.part-advantages .part-container .advantage-icon
+{
+    font-size: 50px;
+    color: var(--contrast-color-1);
+}
+
+.content .part .part-container h3 
+{
+    color: var(--contrast-color-2);
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 24px;
+    font-family: "Poppins";
+}
+
+.content .part .part-container .advantage-icon 
+{
+    font-size: 30px;
+    color: #fff;
+
+}
+
+@keyframes shoes_animation 
+{
+    0% {
+        left: 110%;
+        opacity: 0;
+    } 
+    
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        left: -15%;
+        opacity: 1;
+    }
+}
+
+@keyframes fade_anim 
+{
+    from {
+        opacity: 0;
+        transform: translateY(-50px) scale(0);
+        transform-origin: left;
+    } to {
+        opacity: 1;
+        transform: translateY(initial) scale(1);
+        transform-origin: left;
+    }
+}
+
+@keyframes fade_anim_content 
+{
+    from {
+        filter: brightness(0%);
+       
+        transform-origin: top;
+    } to {
+        filter: brightness(100%);
+       
+    }
+}
+
+@media only screen and (max-width: 1000px)
+{
+
+}
+

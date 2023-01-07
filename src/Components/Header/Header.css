@@ -1,0 +1,119 @@
+header 
+{
+    width: 100%;
+    height: 65px;
+    display: flex;
+    padding-inline: 2rem;
+    align-items: center;
+    position: sticky;
+    backdrop-filter: blur(20px);
+
+    top: 0px;
+    z-index: 100;
+    transition: all 350ms ease-in-out;
+}
+
+header.scrolled 
+{
+    padding-block: 1rem;
+    background: var(--over-color);
+   
+}
+
+header .logo 
+{
+    
+    
+
+
+}
+
+header .logo img 
+{
+    width: 85px;
+
+    cursor: pointer;
+}
+
+header .rest-items 
+{
+    margin-left: auto;
+    margin-right: 4rem;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    gap: 2rem;    
+    z-index: 10;
+
+}
+
+header .rest-items .search-bar 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    background: rgb(15, 26, 26);
+    padding: .25rem 1rem;
+    border-radius: 2rem;
+}
+
+header .rest-items .search-bar input
+{
+    width: 200px;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-radius: 25px;
+    height: 35px;
+    padding-left: 1rem;
+    color: var(--text-color);
+    font-family: "Poppins";
+    font-size: 16px;
+
+    color: var(--text-color-2);
+}
+
+header .rest-items .search-bar .search-icon 
+{
+    font-size: 20px;
+    color: var(--text-color);
+    cursor: pointer;
+}
+
+header .rest-items .basket 
+{
+    
+}
+
+header .rest-items .basket .basket-icon
+{
+    color: var(--text-color-2);
+    cursor: pointer;
+    font-size: 22px;
+}
+
+
+header .rest-items .basket .basket-icon:hover 
+{
+    filter: brightness(115%);
+}
+
+header .rest-items .item a 
+{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+header .rest-items .item p
+{
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 350ms ease-in-out;    
+}
+
+header .rest-items .item p:hover 
+{
+    color: var(--contrast-color-2);
+}
