@@ -117,3 +117,28 @@ header .rest-items .item p:hover
 {
     color: var(--contrast-color-2);
 }
+
+@media only screen and (max-width: 1200px)
+{
+
+    header 
+    {
+        padding-inline: 1rem;
+        height: 50px;
+    }
+
+    header .rest-items .search-bar 
+    {
+        display: none;
+    }
+
+    header .rest-items .item 
+    {
+        display: none;
+    }
+
+    header .logo img 
+    {
+        width: 70px;
+    }
+}

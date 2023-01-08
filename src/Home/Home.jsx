@@ -55,7 +55,7 @@ const Home = () => {
            
             <h2 className="title" id="what-is">What's AdaptFit?</h2>
 
-            <div className="part">
+            <div className="part adaptfit">
                 <div className="part-container">
                     <p>AdaptFit is the solution for everyone that is buying shoes online and might have the "size syndrome". <br /> They have a lot of questions about the shoes:
                         <ul>

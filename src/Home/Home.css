@@ -308,6 +308,23 @@ content.scrolled
     }
 }
 
+@keyframes shoes_animation_mobile
+{
+    0% {
+        left: 110%;
+        opacity: 0;
+    } 
+    
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        left: 0%;
+        opacity: 1;
+    }
+}
+
 @keyframes fade_anim 
 {
     from {
@@ -336,5 +353,144 @@ content.scrolled
 @media only screen and (max-width: 1000px)
 {
 
+    .content 
+    {
+        background-image: linear-gradient(180deg,var(--background-color-1) 22.5%,var(--background-color-2) 34.5%);
+    }
+
+
+    .content .part.part-one 
+    {
+        flex-direction: column-reverse;
+        align-items: center;
+        margin-inline: 0;
+        margin-top: 0;
+        min-height: calc(100vh - 65px - 12rem);
+        gap: 5rem;
+    
+    }
+    
+    .content .part.part-one .part-container:first-child 
+    {
+        margin-top: -100px;
+    }
+
+    .content h2.title 
+    {
+        text-align: center;
+        font-size: 60px;
+        max-width: 90%;
+        margin: 0 auto;
+    }
+
+    .content .part-one h2.title
+    {
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .content .part.part-one .part-container p
+    {
+        max-width: 90%;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .content .part-one .part-container
+    {
+        position: relative;
+    }
+
+    .content .part .part-container 
+    {
+        flex: auto;
+    
+    }
+
+    .content .part-one .part-container img
+    {
+        width: 125%;
+        position: relative;
+        left: initial;
+    }
+
+    .content .part 
+    {
+        /* margin-block: 2.5rem; */
+        min-height: 50vh;
+    }
+
+    .content .part .part-container p
+    {
+        font-size: 20px;
+        margin-left: 10px;
+    }
+
+    .content .part.adaptfit .part-container:nth-child(2)
+    {
+        display: none;
+    }
+
+    .content .models
+    {
+        gap: 15vh;
+    }
+
+    .content .models .model-container
+    {
+        position: relative;
+        margin-top: 1.5rem;
+        flex-direction: column;
+        max-height: 35vh;
+        min-height: 35vh;
+    }
+
+    .content .models .model-container .container-img
+    {
+        margin-left: -1rem;
+        margin-bottom: -1rem;
+    }
+
+    .content .models .model-container .container-img
+    {
+        position: relative;
+    }
+
+    .content .models .model-container .container-img img 
+    {
+        position: relative;
+        height: 25vh;
+
+    }
+
+    .content .models .model-container:nth-child(2)
+    {
+        max-height: initial;
+        min-height: initial;
+    }
+
+    .content .models .model-container:nth-child(2) .container-img img 
+    {
+        transform: initial;
+    }
+    
+    .content .part.last-part
+    {
+        display: flex;
+        align-items: center;
+
+    }
+
+    .content .part.last-part h2
+    {
+        font-size: 40px;
+
+    }
+
+    .content .part-one .part-container img 
+    {
+        animation: shoes_animation_mobile 1750ms linear;
+    }
+    
 }
 
