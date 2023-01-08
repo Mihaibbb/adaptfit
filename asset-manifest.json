@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/adaptfit/static/css/main.b5bf3d9c.css",
+    "main.css": "/adaptfit/static/css/main.76d2bf88.css",
     "main.js": "/adaptfit/static/js/main.58ae55dc.js",
     "static/js/787.d5997860.chunk.js": "/adaptfit/static/js/787.d5997860.chunk.js",
     "static/media/shoes3.png": "/adaptfit/static/media/shoes3.7a26f0f0a33f63a762cc.png",
@@ -12,12 +12,12 @@
     "static/media/logo_gradient.svg": "/adaptfit/static/media/logo_gradient.5a12a037e707043663c147649f7ab219.svg",
     "static/media/logo_white.svg": "/adaptfit/static/media/logo_white.c8915495733fbea6ec59ef76e13f8876.svg",
     "index.html": "/adaptfit/index.html",
-    "main.b5bf3d9c.css.map": "/adaptfit/static/css/main.b5bf3d9c.css.map",
+    "main.76d2bf88.css.map": "/adaptfit/static/css/main.76d2bf88.css.map",
     "main.58ae55dc.js.map": "/adaptfit/static/js/main.58ae55dc.js.map",
     "787.d5997860.chunk.js.map": "/adaptfit/static/js/787.d5997860.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b5bf3d9c.css",
+    "static/css/main.76d2bf88.css",
     "static/js/main.58ae55dc.js"
   ]
 }
